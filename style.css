@@ -1,0 +1,264 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    
+  }
+  header{
+    background-color: black;
+    color: #333;
+    padding: 40px;
+
+  }
+.logo img{
+    width:170px;
+    height: auto;
+    float: left;
+    padding: 30px;
+  }
+  body{
+    font-family: Arial, Helvetica,san-serif;
+    background-color: black;
+    height: 100%;
+
+
+}
+
+/* Add a black background color to the top navigation */
+.main-nav {
+    background-color: #333;
+    list-style: none;
+    float:right;
+    margin: auto;
+    
+  }
+  .main-nav li{
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 40px; 
+    
+    }
+  
+  /* Style the links inside the navigation bar */
+  .main-nav li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 90%;
+    font-weight: bold;
+  }
+  
+  /* Change the color of links on hover */
+  .main-nav li a:hover {
+    color:white;
+    border-bottom: 2px solid white;
+    transition: all 0.5s ease-in;
+    padding: 15px 0;
+  }
+  
+  /* Add a color to the active/current link */
+  .main-nav a.active {
+    background-color: #4CAF50;
+    color: white;
+  } 
+  .intro-container{
+    text-align: center;
+  }
+  .intro{
+      position: relative;
+      font-size: 20px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+
+  }
+  .intro p{
+      font-size: 20px;
+      font-family: serif;
+
+  }
+
+  /*style the images*/
+  .container {
+      width: 100%;
+      margin-top: 10%;
+      font-family: sans-serif;
+      letter-spacing: 1px;
+  }
+  .container h2{
+      background: #4CAF50;
+      position: center;
+      color: black;
+      width: 200px;
+      font-size: 24px;
+      padding: 5px;
+      height: 40px;
+  }
+  .container h2::after
+  {
+      content: '';
+      border-top: 40px solid #0062cc;
+      position: relative;
+      left: 48px;
+      top: 34px;
+  }
+  .row{
+      margin-top: 30px;
+  }
+  .img{
+      width: 100%;
+  }
+  .faq-block{
+    padding-bottom: 25px;
+  }
+  #faq{
+    width: 350px;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 10vh;
+  }
+  label:hover{
+    background-color: #5076d2;
+  }
+  input:checked + label,
+  input:checked + label:hover{
+    background-color: #0062cc;
+    color: #fff;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  input{
+    display: none;
+  }
+  article{
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-top: -2px;
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    transition: 0.3s ease;
+    align-items: center;
+
+  }
+
+  label{
+    padding: 5px 20px;
+    position: relative;
+    z-index: 20;
+    display: block;
+    height: 40px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 30px;
+    line-height: 40px;
+    font-size: 16px;
+    background-color: #81a2ff;
+    }
+    .rom {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      margin: 0 -16px;
+    }
+    
+    .col-25 {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+    }
+    
+    .col-50 {
+      -ms-flex: 50%; /* IE10 */
+      flex: 50%;
+    }
+    
+    .col-75 {
+      -ms-flex: 75%; /* IE10 */
+      flex: 75%;
+    }
+    
+    .col-25,
+    .col-50,
+    .col-75 {
+      padding: 0 16px;
+    }
+    
+    .container {
+      background-color: #f2f2f2;
+      padding: 5px 20px 15px 20px;
+      border: 1px solid lightgrey;
+      border-radius: 3px;
+    }
+    
+    input[type=text] {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    
+    label {
+      margin-bottom: 10px;
+      display: block;
+    }
+    
+    .icon-container {
+      margin-bottom: 20px;
+      padding: 7px 0;
+      font-size: 24px;
+    }
+    
+    .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      width: 100%;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 17px;
+    }
+    
+    .btn:hover {
+      background-color: #45a049;
+    }
+    
+    span.price {
+      float: right;
+      color: grey;
+    }
+    
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+    @media (max-width: 800px) {
+      .row {
+        flex-direction: column-forward;
+      }
+      .col-25 {
+        margin-bottom: 20px;
+      }
+    }
+
+
+    
+
+
+
+
+  .footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: green;
+    color: white;
+    text-align: center;
+    font:cursive;
+    font-size: 14px;
+ }
